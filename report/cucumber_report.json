@@ -1,0 +1,192 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "cookies-window;accept-all-cookies",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Accept All Cookies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "The user opens the website",
+            "match": {
+              "location": "step-definitions\\cookies.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2162000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "The Accept Cookies button is displayed",
+            "match": {
+              "location": "step-definitions\\cookies.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The user presses the button",
+            "match": {
+              "location": "step-definitions\\cookies.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Website Logo is accessable",
+            "match": {
+              "location": "step-definitions\\cookies.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AcceptCookies",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "cookies-window;turn-on-functional-cookies",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Turn on functional cookies",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "The user will access the website",
+            "match": {
+              "location": "step-definitions\\cookies.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 550000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "The user clicks on cookies settings button",
+            "match": {
+              "location": "step-definitions\\cookies.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Scrolls down the menu",
+            "match": {
+              "location": "step-definitions\\cookies.js:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Presses the toggle button",
+            "match": {
+              "location": "step-definitions\\cookies.js:38"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "ReferenceError: cookie is not defined\n    at World.<anonymous> (C:\\Users\\Public\\Documents\\OPEN\\step-definitions\\cookies.js:41:24)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Accepts all cookies",
+            "match": {
+              "location": "step-definitions\\cookies.js:45"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "The new cookies are saved",
+            "match": {
+              "location": "step-definitions\\cookies.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalCookiesOFF",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "cookies-window",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Cookies Window",
+    "tags": [],
+    "uri": "features\\cookies.feature"
+  }
+]

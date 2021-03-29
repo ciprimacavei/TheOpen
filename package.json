@@ -1,0 +1,27 @@
+{
+  "name": "theopen",
+  "version": "1.0.0",
+  "description": "automation tests for the open",
+  "main": "index.js",
+  "scripts": {
+    "test": "mkdirp report && cucumber-js --require ./conf/cucumber.conf.js --require ./step-definitions --format ./node_modules/cucumber-pretty --format json:report/cucumber_report.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.0.0",
+    "chromedriver": "^89.0.0",
+    "cucumber-html-reporter": "^5.3.0",
+    "cucumber-pretty": "^6.0.0",
+    "geckodriver": "^1.22.2",
+    "mkdirp": "^1.0.4",
+    "nightwatch": "^1.5.1",
+    "nightwatch-api": "^3.0.2",
+    "selenium-server": "^3.141.59",
+    "selenium-webdriver": "^4.0.0-beta.2"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.3",
+    "cucumber": "^7.0.0-rc.0"
+  }
+}
